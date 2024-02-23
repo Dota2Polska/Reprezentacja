@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Document</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            overflow: hidden; /* Hide overflow to prevent scrollbars caused by video */
+        }
+
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1000;
+            padding: 50px;
+            color: #fff;
+            font-family: 'Calibri Bold', sans-serif;
+	font-variant: small-caps; 
+
+        }
+
+        h1 {
+            font-size: 2em;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 2.5em;
+            line-height: 0.3;
+            display: flex;
+            align-items: center;
+	margin-left: 400px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+margin-left: 100px;
+        }
+
+        .header img {
+            margin-left: 0px;
+	margin-top: -20px; 
+  margin-right: 50px;
+        }
+   
+ 	.logo1 {
+            width: auto; /* Adjust the width of the first image as needed */
+            height: 120px; /* Maintain the aspect ratio */
+        }
+
+        .logo2 {
+            width: auto;
+            height: 80px; 
+ }
+
+	.logo3 {
+		width: auto;
+            	height: 80px; 
+        }
+        p img {
+            width: 400px;
+	    margin-left: 400px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="https://cdn.discordapp.com/attachments/1089633945118855180/1210721589361115136/tlo_twitch_pdl_v1.mp4?ex=65eb9759&is=65d92259&hm=c244e08e21958362246ed9d763b744c2a60410cd9abb40cf4cb94a1975efcfab&" type="video/mp4"> <!-- Replace 'your-video.mp4' with the actual filename of your video -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+	<div class="header">
+		<img class="logo1" src="https://i.imgur.com/IDMmheT.png" alt="Header Logo 1"> 
+		<img class="logo2" src="https://polskiesport.pl/wp-content/uploads/2023/03/logo.jpg" alt="Header Logo 2">
+		<img class="logo3" src="https://i.imgur.com/TE35F3G.png" alt="Header Logo 3"> 
+	</div>
+        <p>
+		Eliminacje do Narodowej Drużyny Esportu 2024
+        </p>
+        <iframe src="https://challonge.com/15vg5ny5/module" width="1800" height="800" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+</body>
+</html>
